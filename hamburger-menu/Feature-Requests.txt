@@ -1,0 +1,6 @@
+I think the hamburger menu all the time instead of based on screen width.
+
+Less 'white-space' top to bottom when menu is selected...
+
+To be able to put the site name in the center.
+ie. Owl.png   "Chief Okemos District Advancement"   Menu
