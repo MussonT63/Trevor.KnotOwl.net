@@ -5,24 +5,35 @@
     box-sizing: border-box;
 }
 
+h1 { text-align: center; }
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    background-color: #333; /* */
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #333; /* */
+  color: white;
 }
+.navbar div { display: flex; }
 
 .nav-menu {
-    display: flex;
-    list-style: none; /* */
+  display: flex;
+  list-style: none;
+  position: fixed;
+  right: -100%; /* Position off-screen initially */
+  top: 105px; /* Adjust based on navbar height */
+  width: 50%;
+  flex-direction: column;
+  background-color: #333;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.nav-item {
-    margin-left: 2rem;
-}
-
+/* Class added by JavaScript to make menu visible */
+.nav-menu.active { right: 0; }
+.nav-item { margin: 15px 0; }
 .nav-link {
     color: white;
     text-decoration: none;
@@ -30,11 +41,11 @@
 
 /* Hamburger Icon Styling */
 .hamburger {
-    display: none; /* Hide by default on desktop */
+  /* Hide by default on desktop */
     background: none;
     border: none;
-    cursor: pointer; /* */
-    padding: 0;
+    cursor: pointer;
+    /* padding: 0; */
 }
 
 .bar {
@@ -46,31 +57,17 @@
     transition: 0.4s; /* */
 }
 
-/* Mobile styles (e.g., max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: block; /* Show hamburger on mobile */
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -100%; /* Position off-screen initially */
-        top: 60px; /* Adjust based on navbar height */
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Class added by JavaScript to make menu visible */
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  .nav-menu {
+      right: -100%; /* Position off-screen initially */
+      top: 105px; /* Adjust based on navbar height */
+      width: 25%;
+  }
+  /* .nav-menu.active { right: 0; } */
+  .nav-item { margin: 5px; }
+  /* .nav-link {
+    color: white;
+    text-decoration: none;
+  } */
 }
-
