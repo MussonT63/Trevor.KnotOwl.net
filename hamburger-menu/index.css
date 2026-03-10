@@ -58,7 +58,8 @@ h1 { text-align: center; }
 }
 
 /* For devices with a minimum width of 768px (Medium) */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) { */
+@media screen and (min-width: 600px) {
   .nav-menu {
       right: -100%; /* Position off-screen initially */
       top: 105px; /* Adjust based on navbar height */
