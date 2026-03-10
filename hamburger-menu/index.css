@@ -59,11 +59,11 @@ h1 { text-align: center; }
 
 /* For devices with a minimum width of 768px (Medium) */
 /* @media screen and (min-width: 768px) { */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1600px) { /* ie, narrower than this get's these settings */
   .nav-menu {
       right: -100%; /* Position off-screen initially */
       top: 105px; /* Adjust based on navbar height */
-      width: 30%; /* width: 25%; */
+      width: 50%; /* width: 25%; */
   }
   /* .nav-menu.active { right: 0; } */
   .nav-item { margin: 15px; } /* .nav-item { margin: 5px; } */
