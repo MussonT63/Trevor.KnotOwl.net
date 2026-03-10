@@ -1,3 +1,0 @@
-[09/Mar/2026:15:45:54 -0400] Failed to bind the socket, port #1104, address=0.0.0.0, error #50.
-
-Probable reason is that another daemon is already running on the same port (1104).

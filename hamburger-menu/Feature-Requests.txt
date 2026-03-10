@@ -1,6 +1,13 @@
-I think the hamburger menu all the time instead of based on screen width.
+Menu stays open unless you go to a diff page, or click the menu button a second time.
 
-Less 'white-space' top to bottom when menu is selected...
+Menu change on screen size?
+	It is the same on my phone as it is on a computer...
 
-To be able to put the site name in the center.
-ie. Owl.png   "Chief Okemos District Advancement"   Menu
+----------------------------------------------------------
+
+Done - I think the hamburger menu all the time instead of based on screen width.
+
+Done - Less 'white-space' top to bottom when menu is selected...
+
+Done - To be able to put the site name in the center.
+		ie. Owl.png   "Chief Okemos District Advancement"   Menu
