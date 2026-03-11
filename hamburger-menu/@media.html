@@ -6,7 +6,8 @@
   <style>
     body { background-color: yellow; }
 
-    @media only screen and (max-width: 600px) {
+    /* @media only screen and (max-width: 600px) { */
+    @media only screen and (min-width: 600px) {
       body { background-color: lightblue; }
     }
   </style>
@@ -14,12 +15,12 @@
 </head>
 <body>
   <h1>The @media Rule</h1>
-  <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "yellow".</p>
+  <p>Resize the browser window. When the width of this document is 600 pixels or more, the background-color is "lightblue", otherwise it is "yellow".</p>
   <pre>
   &lt;style&gt;
     body { background-color: yellow; }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 600px) {
       body { background-color: lightblue; }
     }
   &lt;/style&gt;

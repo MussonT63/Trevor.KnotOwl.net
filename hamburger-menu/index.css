@@ -12,28 +12,13 @@ h1 { text-align: center; }
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #333; /* */
-  color: white;
-}
-.navbar div { display: flex; }
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  position: fixed;
-  right: -100%; /* Position off-screen initially */
-  top: 105px; /* Adjust based on navbar height */
-  width: 30%; /* width: 50%; */
-  flex-direction: column;
   background-color: #333;
-  text-align: center;
-  transition: 0.3s;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: white; /* font color */
 }
+div { display: flex; }
 
 /* Class added by JavaScript to make menu visible */
 .nav-menu.active { right: 0; }
-.nav-item { margin: 15px 0; }
 .nav-link {
     color: white;
     text-decoration: none;
@@ -45,9 +30,7 @@ h1 { text-align: center; }
     background: none;
     border: none;
     cursor: pointer;
-    /* padding: 0; */
 }
-
 .bar {
     display: block;
     width: 25px;
@@ -57,19 +40,32 @@ h1 { text-align: center; }
     transition: 0.4s; /* */
 }
 
-/* For devices with a minimum width of 768px (Medium) */
-/* @media screen and (min-width: 768px) { */
-@media screen and (min-width: 1600px) { /* ie, wider than this get's these settings */
+/* default (mobile/narrow) settings start */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  right: -100%; /* Position off-screen initially */
+  top: 105px; /* Adjust based on navbar height */
+  width: 45%; /* width: 50%; */
+  flex-direction: column;
+  background-color: #333;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-item { margin: 15px 0; }
+/* default (mobile/narrow) settings end */
+/* -------------------------------------------------- */
+/* wider screen (desktop/wide) settings start */
+@media screen and (min-width: 600px) { /* ie, wider than this get's these settings */
   .nav-menu {
-      right: -100%; /* Position off-screen initially */
-      top: 105px; /* Adjust based on navbar height */
-      width: 50%; /* width: 25%; */
+      /* right: -100%; Position off-screen initially */
+      /* top: 105px; Adjust based on navbar height */
+      width: 30%; /* width: 25%; */
       background-color: blue;
   }
-  /* .nav-menu.active { right: 0; } */
-  .nav-item { margin: 15px; } /* .nav-item { margin: 5px; } */
-  /* .nav-link {
-    color: white;
-    text-decoration: none;
-  } */
+  /* .nav-item { margin: 15px; } This is the margin around menu items */
 }
+/* wider screen (desktop/wide) settings end */
+
