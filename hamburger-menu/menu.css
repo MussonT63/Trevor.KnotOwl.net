@@ -41,6 +41,7 @@ div { display: flex; }
 }
 
 /* default (mobile/narrow) settings start */
+body { background-color: lightgray; }
 .nav-menu {
   display: flex;
   list-style: none;
@@ -65,7 +66,12 @@ div { display: flex; }
       width: 30%; /* width: 25%; */
       background-color: blue;
   }
+  body { background-color: lightblue; }
   /* .nav-item { margin: 15px; } This is the margin around menu items */
 }
 /* wider screen (desktop/wide) settings end */
 
+
+/* @media only screen and (max-width: 600px) { */
+@media only screen and (min-width: 600px) {
+}
