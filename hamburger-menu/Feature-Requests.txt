@@ -1,4 +1,29 @@
-FYI, working on live page at https://test.knotowl.net/ (repo of the same name)
+FYI, working on "live" page at https://test.knotowl.net/ (repo of the same name)
+
+Sub-Menu items that expand on click or hover?
+	Home
+	Advancement >
+	  Eagle
+	  Venturing
+	  MBC Info
+	Chief Okemos >
+	  Reports
+	  Laurels
+	  Calendar
+	  FAQ
+	  Misc
+	KnotMasters >
+	  Apprentice
+	  Knotter
+	  Hitcher
+	  Master
+	  Owl
+	  Lasher
+	  Maker
+	  Rules
+	  Definitions
+	About
+
 I got the home page image to scale nicely
 	it has a margin
 	it fills the screen height at 90%
