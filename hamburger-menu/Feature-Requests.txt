@@ -23,6 +23,7 @@ Sub-Menu items that expand on click or hover?
 	  Rules
 	  Definitions
 	About
+With the sub-menu items lining up better (ie, indent, but left justify?)
 
 I got the home page image to scale nicely
 	it has a margin
