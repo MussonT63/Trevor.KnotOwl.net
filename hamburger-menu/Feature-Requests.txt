@@ -1,48 +1,33 @@
 FYI, working on "live" page at https://test.knotowl.net/ (repo of the same name)
 
-Sub-Menu items that expand on click or hover?
-	Home
-	Advancement >
-	  Eagle
-	  Venturing
-	  MBC Info
-	Chief Okemos >
-	  Reports
-	  Laurels
-	  Calendar
-	  FAQ
-	  Misc
-	KnotMasters >
-	  Apprentice
-	  Knotter
-	  Hitcher
-	  Master
-	  Owl
-	  Lasher
-	  Maker
-	  Rules
-	  Definitions
-	About
-With the sub-menu items lining up better (ie, indent, but left justify?)
-
-I got the home page image to scale nicely
-	it has a margin
-	it fills the screen height at 90%
-	it auto scales based on width, keeping proportions
-    How do I get it to stick to the TOP of the space?
-
 How do do includes...
 	I'd like to have 1 (well, really a couple) of menu files I use in each page
 	Currently I do it like Line#9 here: view-source:http://knotowl.net/ChiefOkemosDistrict/Advancement/
 	  The file referenced looks like this: http://knotowl.net/ChiefOkemosDistrict/Advancement/menu.js
 	    I'm guessing there is a better way - I can't imagine people
 	    make html code then wrap it up in js like I did, lol.
+We started trying to use XMLHttpRequest, but it requests additional access so I don't think it's something I want to do.
+May have to go with putting the html in js or building out js code to have the menu code in just one place.
 
-
-Menu stays open unless you go to a diff page, or click the menu button a second time.
-	Should close if clicking not on the menu
 
 ----------------------------------------------------------
+
+Done - Menu stays open unless you go to a diff page, or click the menu button a second time.
+	Should close if clicking not on the menu
+
+Done - I got the home page image to scale nicely
+	it has a margin
+	it fills the screen height at 90%
+	it auto scales based on width, keeping proportions
+    How do I get it to stick to the TOP of the space?
+
+Done - Sub-Menu items that expand on click or hover?
+	Home
+	Advancement > Eagle, Venturing, MBC Info
+	Chief Okemos > Reports, Laurels, Calendar, FAQ, Misc
+	KnotMasters > Apprentice, Knotter, Hitcher, Master, Owl, Lasher, Maker, Rules, Definitions
+	About
+Done - With the sub-menu items lining up better (ie, indent, but left justify?)
 
 Done - Menu change on screen size?
 	It is the same on my phone as it is on a computer...
